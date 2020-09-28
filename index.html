@@ -1,15 +1,52 @@
-< html >
-  < cabeÃ§a >
-        < title > Tabela teste </ title >
-        < style  type = " text / css " >
-        corpo { cor de fundo : # 000000 }
-        </ estilo >
-  </ head >
-  < corpo >
-      < table  border = " 1 " ;  espaÃ§amento entre cÃ©lulas = " 0 " ;  cellpadding = " 0 " >
-        < tr >
-            < td > ABC </ td > < td > DEF </ td > < td > GHI </ td >
-        </ tr >
-      </ mesa >
-  </ body >
-</ html >
+<html>
+	<head>
+		<meta http-equiv="Refresh" content="3">
+		<title>Tabela usando css na configuração</title>
+		<style type="text/css">
+			body{background-color:#ff00ff;}
+			h1{	color:#ffffff;
+				font-size:45px;
+				font-family:Arial;
+				font-style:italic;
+				text-decoration:underline;
+				text-align:center;
+				text-transform:uppercase;
+					
+			}
+			p{	color:#ffffff;
+				letter-spacing:3px;
+				word-spacing:15px;
+				text-indent:30
+			}
+			table{	border-spacing:0px; border-collapse:collapse
+			}
+			td{ 	border:5px solid #ffffff
+			}
+			.classe1, .classe2{background-color:#ff0000;
+					text-align:center;
+					height:50px;
+					color:#ffffff;
+					font-weight:bold;
+					font-size:20px;
+					font-family:Arial;
+			}
+			.classe2{background-color:#000000
+			} 
+		</style>
+	</head>
+
+	<body>
+		<h1>Tabela</h1>
+		<p>É uma tabela treino onde irei usar o css para as transformações da mesma e tentar enviá-la para o GitHub</p>
+		<table  width="600">
+			<tr>
+				<td class="classe1"colspan="3">Tabela teste</td> 
+			</tr>
+			<tr>
+				<td class="classe2"; style="text-align:left;vertical-align:bottom">ABC</td> <td class="classe2">DEF</td> <td class="classe2"; style="text-align:right; vertical-align:top ";>GHI</td>
+			</tr>
+		<p>Temos na segunda linha as colunas formatadas de três maneiras em relação ao alinhamento dos textos</p>
+
+		</table>
+	</body>
+</html>
